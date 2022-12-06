@@ -1,0 +1,166 @@
+@import "./reset.css";
+
+
+
+body {
+    font-family: 'Kanit', serif;
+    background-color: #fefefe;
+}
+
+/* Header */
+
+header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    background-color: #ffa500;
+}
+
+.title {
+    display: flex;
+    justify-items: flex-start;
+    align-items: start;
+}
+
+.title-a h1 {
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 600;
+    color: #676767;
+    text-transform: uppercase;
+}
+
+/* Search */
+
+form.search-box {
+    height: 30px;
+    display: flex;
+    position: absolute;
+    right: 20px;
+    align-self: center;
+}
+
+input[type="text"].search {
+    background-color: #ededed;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    max-width: fit-content;
+
+}
+
+#search-btn {
+    background-color: #ededed;
+    width: 30px;
+    color: #676767;
+    font-size: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+#search-btn:active {
+    color: black;
+}
+
+/* main */
+
+main {
+    min-height: calc(100vh - 50px - 30px);
+}
+
+.content {
+    height: 400px;
+    margin-bottom: 25px;
+    background-color: #ff741a;
+    color: #fefefe;
+    font-size: 50px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: change-color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes change-color {
+    0% {
+        background-color: #ff741a;
+    }
+
+    25% {
+        background-color: #ff1aa5;
+    }
+
+    50% {
+        background-color: #1aff74;
+    }
+
+    75% {
+        background-color: #1aa5ff;
+    }
+
+    100% {
+        background-color: #ff741a;
+    }
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+.article {
+    text-indent:36px;
+    margin-bottom: 20px;
+}
+
+/* footer */
+
+footer {
+    background-color: #ffa500;
+}
+
+div.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #676767;
+    font-size: 20px;
+}
+
+div.contect-info {
+    display: flex;
+}
+
+i.fa-brands {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #676767;
+}
+
+
+a:active {
+    color: black;
+}
+
+#cookie {
+    width: 100px;
+    border-radius: 20%;
+    background-color: #ff741a;
+    box-shadow: #676767 1px 2px 1px;
+    margin-right: 200px;
+}
+
+#cookie:active {
+    background-color: #ffc04d;
+    box-shadow: none;
+}
